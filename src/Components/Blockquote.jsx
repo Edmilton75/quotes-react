@@ -1,23 +1,28 @@
 import React, { useEffect, useState } from "react";
-import "../styles/ButtonQuote.css";
+import "../styles/ButtonRandon.css";
 
 const Blockquote = () => {
-  const [randon, setRandon] = useState(null);
+  const [random, setRandom] = useState(null);
+
 
   useEffect(() => {
     fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random")
       .then((r) => r.json())
-      .then((json) => setRandon(json));
+      .then((json) => setRandom(json));
   }, []);
-  console.log(randon);
-  if (randon === null) return null;
+  console.log(random);
+  if (random === null) return null;
+
 
   return (
     <>
+      <header>
+        <button  className="buttonRandon">Random</button>
+      </header>
       <blockquote className="blockquote">
-        <p>{randon.data[0].quoteText}</p>
+        <p>"{random.data[0].quoteText}"</p>
       </blockquote>
-      <button className="buttonQuote">{randon.data[0].quoteAuthor}</button>
+      <button className="buttonQuote">{random.data[0].quoteAuthor}</button>
     </>
   );
 };

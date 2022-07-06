@@ -1,4 +1,35 @@
-.navigator {
-  display: grid;
-  grid-template-rows: auto;
+body {
+  margin: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container .buttonQuote {
+  max-width: 80%;
+  padding: 2rem;
+  width: 80%;
+  text-align: left;
+
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.buttonQuote:hover {
+  background: #1d1b1b;
+  color: white;
+  transition: 0.2s;
+  border-radius: 5px;
+}
+
+.container .buttonRandon {
+  text-align: left;
 }
