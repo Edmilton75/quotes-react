@@ -25,7 +25,7 @@ const Blockquote = () => {
         <button onClick={() => getQuote()} className="buttonRandon">Random</button>
       </header>
       <blockquote className="blockquote">
-        <q>"{random.quoteText}"</q>
+        <q>{random.quoteText}</q>
       </blockquote>
       <a className="buttonQuote">{random.quoteAuthor}
       <p>{random.quoteGenre}</p></a>
