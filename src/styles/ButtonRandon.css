@@ -18,4 +18,5 @@ header {
     text-align: center;
     font-size: 2rem;
     line-height: 1.2;
+    border-left: 4px solid #ccc;
 }
