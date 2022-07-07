@@ -10,6 +10,7 @@ header {
     cursor: pointer;
     margin: 1rem 0 2rem;
     font-family: 'Raleway', sans-serif;
+    color: #000;
 }
 
 .blockquote {
@@ -17,6 +18,7 @@ header {
     line-height: 1.2;
     font-family: 'Raleway', sans-serif;
     width: 80%;
+    color: #000;
 }
 
 .blockquote   {
