@@ -3,24 +3,31 @@ import "../styles/ButtonRandon.css";
 
 const Blockquote = () => {
   const [random, setRandom] = useState(null);
-  const [atualizar, setAtualizar] = useState(0)
 
+  async function getQuote() {
+    const response = await fetch(
+      "https://quote-garden.herokuapp.com/api/v3/quotes/random"
+    );
+    const toJson = await response.json();
+
+    setRandom(toJson.data[0]);
+  }
+  
   useEffect(() => {
-    fetch("https://quote-garden.herokuapp.com/api/v3/quotes/random")
-      .then((r) => r.json())
-      .then((json) => setRandom(json));
-  }, [atualizar]);
+    getQuote();
+  }, []);
+
   if (random === null) return null;
 
   return (
     <>
       <header>
-        <button onClick={() => setAtualizar(atualizar + 1)} className="buttonRandon">Random</button>
+        <button onClick={() => getQuote()} className="buttonRandon">Random</button>
       </header>
       <blockquote className="blockquote">
-        <p>"{random.data[0].quoteText}"</p>
+        <p>"{random.quoteText}"</p>
       </blockquote>
-      <button className="buttonQuote">{random.data[0].quoteAuthor}</button>
+      <button className="buttonQuote">{random.quoteAuthor}</button>
     </>
   );
 };
