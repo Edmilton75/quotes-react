@@ -28,6 +28,9 @@ body {
   color: white;
   transition: 0.2s;
   border-radius: 5px;
+
+  box-shadow:  -3px 3px 4px #b5b3b3;
+  
 }
 
 .container .buttonRandon {
