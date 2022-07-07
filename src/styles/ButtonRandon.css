@@ -8,15 +8,18 @@ header {
     background: transparent;
     border: none;
     cursor: pointer;
-    margin: 1rem;
+    margin: 1rem 0 2rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .blockquote {
-    max-width: 80%;
-    max-height: 60%;
-    padding: 5rem;
-    text-align: center;
     font-size: 2rem;
     line-height: 1.2;
-    border-left: 4px solid #ccc;
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+}
+
+.blockquote   {
+    border-left: 4px solid #F7DF94;
+    padding-left: 50px;
 }
