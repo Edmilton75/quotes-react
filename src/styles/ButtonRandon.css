@@ -25,3 +25,8 @@ header {
     border-left: 4px solid #F7DF94;
     padding-left: 50px;
 }
+
+.icone {
+    margin: 1rem 1px 2rem;
+    color: #000;
+}

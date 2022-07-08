@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../styles/ButtonRandon.css";
+import { HiOutlineRefresh } from "react-icons/hi"
 
 const Blockquote = () => {
   const [random, setRandom] = useState(null);
@@ -22,6 +23,7 @@ const Blockquote = () => {
   return (
     <>
       <header>
+        <HiOutlineRefresh className="icone"/>
         <button onClick={() => getQuote()} className="buttonRandon">Random</button>
       </header>
       <blockquote className="blockquote">
