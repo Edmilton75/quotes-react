@@ -24,6 +24,7 @@ export default function QuotesList() {
     <>
       <div className="authorTitle">
         <h1 className="authorList">{author.author}</h1>
+        <p>123</p>
       </div>
       <ul>
         {quotesAuthor.map((quoteAuthor) => (
