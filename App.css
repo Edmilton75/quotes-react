@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.buttonQuote {
+  display: block;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 100%;
+  padding-block: 2rem;
+  padding-left: 50px;
+  margin-top: 2rem;
+}
+
+.buttonQuote p {
+  color: #828282;
+  font-size: 1rem;
+}
+
+.buttonQuote:hover {
+  background: #333333;
+  color: white;
+  transition: 0.2s;
+  border-radius: 5px;
+
+  box-shadow: -3px 3px 4px #b6b4b4;
+  font-family: "Roboto", sans-serif;
+}
+
+.buttonRandon {
+  text-align: left;
+}
+
+.authorTitle {
+  max-width: 870px;
+  width: 100%;
+  padding-left: 100px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  margin-top: 2rem;
+}
+
+.lista {
+  margin-block: 80px;
+}

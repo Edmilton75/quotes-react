@@ -1,10 +1,12 @@
 header {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    margin-bottom: 120px;
 }
 
 .buttonRandon {
+    display: inline-block;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -17,16 +19,21 @@ header {
     font-size: 2rem;
     line-height: 1.2;
     font-family: 'Raleway', sans-serif;
-    width: 80%;
+    width: 100%;
     color: #000;
 }
 
 .blockquote   {
     border-left: 4px solid #F7DF94;
     padding-left: 50px;
+    margin-bottom: 2rem;
 }
 
+
+
 .icone {
-    margin: 1rem 1px 2rem;
+    padding-left: 10px;
+    position: relative;
+    top: 2px;
     color: #000;
 }
