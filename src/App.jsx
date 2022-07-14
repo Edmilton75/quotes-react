@@ -2,10 +2,10 @@ import "./styles/reset.css";
 
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Blockquote from "./src/components/Blockquote";
+import Blockquote from "./components/Blockquote";
 import "./App.css";
 
-import QuotesList from "./src/components/QuotesList";
+import QuotesList from "./components/QuotesList";
 
 const App = () => {
   return (
