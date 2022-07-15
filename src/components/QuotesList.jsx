@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { AiOutlineRollback } from "react-icons/ai";
 import Quote from "./Quote";
 import "../styles/ButtonRandom.css";
 
@@ -23,7 +24,10 @@ export default function QuotesList() {
   return (
     <>
       <div className="authorTitle">
-        <h1 className="authorList">{author.author}</h1>
+        <Link className="iconBack" to="/">
+          <AiOutlineRollback  />
+          <h1>{author.author}</h1>
+        </Link>
       </div>
       <ul>
         {quotesAuthor.map((quoteAuthor) => (

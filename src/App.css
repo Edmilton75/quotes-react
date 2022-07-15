@@ -47,7 +47,7 @@ a {
 .authorTitle {
   max-width: 870px;
   width: 100%;
-  padding-left: 100px;
+  padding-left: 50px;
 
   font-family: "Roboto", sans-serif;
   font-size: 36px;
@@ -56,4 +56,18 @@ a {
 
 .lista {
   margin-block: 80px;
+}
+
+.iconBack {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  color: #000000;
+}
+
+.arrowIcone {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 30px;
+  margin-top: -35px;
 }

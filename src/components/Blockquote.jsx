@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/ButtonRandom.css";
 import { HiOutlineRefresh } from "react-icons/hi";
+import { BsArrowRight } from "react-icons/bs";
 import Quote from "./Quote";
 import { Link } from "react-router-dom";
 
@@ -36,6 +37,9 @@ const Blockquote = () => {
       <Link to={`/author/${random.quoteAuthor}`} className="buttonQuote">
         {random.quoteAuthor}
         <p>{random.quoteGenre}</p>
+        <div className="arrowIcone">
+          <BsArrowRight />
+        </div>
       </Link>
     </>
   );
